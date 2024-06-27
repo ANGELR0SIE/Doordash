@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/*FONTS*/
+@font-face {
+  font-family: font1;
+  src: url(https://typography.doordash.com/TTNorms-Regular.woff2);
+}
+@font-face {
+  font-family: font2;
+  src: url(
+    https://typography.doordash.com/TTNorms-Medium.woff2);
+}
+@font-face {
+  font-family: font3;
+  src: url(https://typography.doordash.com/TTNorms-Bold.woff2);
+}
+@font-face {
+  font-family: font4;
+  src: url(https://typography.doordash.com/TTNorms-ExtraBold.woff2);
+}
+@font-face {
+  font-family: font5;
+  src: url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2);
+}
+@font-face {
+  font-family: font6;
+  src: url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2);
+}
+  body{
+    height: 3000px;
+  }
+  .home{
+  background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png);
+    height: 550px;
+    padding: 0px 8px;
+    /* display: flex; */
+    flex-flow: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  padding-top: 16px;
+  margin-right: 16px;
+} 
+.door-dash-logo,
+.signup-btn,
+.signin-btn{
+  display: none;
+}
+.login-btn,
+  .open-app-btn{
+    /* margin-left: 10px; */
+    border-radius: 25px;
+    padding: 0 12px;
+    padding-top: 6.3px;
+    padding-bottom:6.3px ;
+    border: none;
+    font-size: 16px;
+    font-family: font3;
+}
+.login-btn{
+  background: #fff;
+  color: #000;
+}
+.open-app-btn,
+.signin-btn {
+    color: #fff;
+    background: #eb1700;
+  }
+.flex-spacer{
+  flex: 1;
+}
+.btn-space{
+  width: 8px;
+}
+
+.banner-logo{
+  margin-top: 13.1vh;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.banner-head{
+  max-width: 350px;
+  font-family: font3;
+  letter-spacing: 0px;
+  font-size: 14.7px;
+  line-height: 28px;
+  text-align: center;
+  margin-top:0px;
+  padding-bottom: 10px;
+  color: rgba(255, 255, 255);
+}
+.banner-head h1 {
+  display: block;
+  /* font-size: 2em; */
+  /* margin-block-start: 0.67em; */
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /* font-weight: bold; */
+  unicode-bidi: isolate;
+}
+.banner-search-bar{
+  display: flex;
+  background: #fff;
+  width: 324px;
+  height: 48px;
+  border-radius: 25px;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+.search-icon{
+  padding-top: 3px;
+  padding-left: 16px;
+}
+.locationIcon-banner-768{
+  display: none;
+}
+.search-text{
+  padding-left: 12px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  font-family: font2;
+  color: #606060;
+}
+.search-arrow{
+padding-left: 75px;
+margin-top: 4px;
+}
+.search-arrow-red{
+  display: none;
+}
+.banner-login-btn{
+  display: flex;
+  width: 81.6px;
+  height: 32px;
+  background: #fff;
+  border-radius: 25px;
+  margin-top: 16px;
+  align-items: center;
+}
+.user-icon{
+  padding-left: 12px;
+  padding-top: 5px;
+}
+.banner-login,
+.banner-signin,
+.banner-signin-1024{
+  padding-left: 4.3px;
+  font-family: font3;
+  font-size: 14px;
+}
+.banner-signin,
+.banner-signin-1024{
+  display: none;
+}
+.banner-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 176px;
+  width: 350px;
+  margin:16px auto;
+  /* margin-left: 15.6vw; */
+  margin-top: 16px;
+  /* margin-left: var(--uasage-space-xx-small); */
+}
+/*add portion*/
+.ad-spacer-top{
+  height: 20px;
+}
+.ad-container {
+  display: flex;
+  padding: 20px;
+  width: 360px;
+  height: 148px;
+  background: #F7F7F7;
+  border: 1px solid #E7E7E7;
+  border-radius: 17px;
+  margin: 0 auto;
+}
+
+.ad-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  border: 1px solid #E7E7E7;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3px;
+  padding: 8px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.ad-sub-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ad-google-play-logo img {
+}
+
+.ad-doordash-app h1 {
+  width: 177.31px;
+  height: 22px;
+  /* font-family: font2; */
+  font-size: 17.3px;
+  margin: 0px 0px 4px;
+  margin-bottom: 4px;
+  letter-spacing: 0px;
+  color: #191919;
+  font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  
+}
+
+.ad-text {
+  font-family: font2;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 12px;
+  color: #767676;
+  margin: 0px 0px 8px;
+}
+
+.ad-button {
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  background: #EB1700;
+  border-radius: 25px;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 124.23px;
+  height: 32px;
+}
+
+.ad-button-text  {
+  font-family: font3;
+  font-size: 14px;
+  color: #FFF;
+}
+
+.ad-arrow svg {
+padding: 0px;
+margin:0px;
+}
+.dasher-link,
+.partner-link,
+.experience-link{
+  display: flex;
+  margin-top: 14px;
+}
+.dasher-link p,
+.partner-link p,
+.experience-link p{
+  color: #EB1700;
+  font-size: 14px;
+  font-family: font3;
+}
+.dasher-arrow-red,
+.partner-arrow-red,
+.experience-arrow-red{
+  margin-left: 4px;
+}
+.become-a-dasher,
+.become-a-partner,
+.DoorDash-experience{
+  display: flex;
+  width: 402px;
+  height: 216px;
+  padding: 16px;
+  margin: 0px auto;
+}
+.dasher-image img,
+.partner-image img,
+.experience-image img{
+  margin-right: 32px;
+  width: 88px;
+  margin-bottom: 10px;
+}
+.dasher-header,
+.partner-header,
+.experience-header{
+  color: #191919;
+  font-size: 21.334px;
+  font-family: font3;
+  width: 250px;
+  height: 80px;
+  line-height: 40px;
+}
+.dasher-paragrapgh,
+.partner-paragrapgh,
+.experience-paragrapgh{
+  width: 250px;
+  height: 72px;
+  font-size: 18px;
+  font-family: font2;
+  line-height: 24px;
+}
+.experience-paragrapgh{
+  margin-top: 40px;
+}
+.spacer-midsection-top{
+  height: 48px;
+}
+.mid-section-1024{
+  display: none;
+}
+
+
+/* screen 768 px*/
+@media (min-width:768px) {
+  .ad{
+    display: none;
+  }
+  .flex-spacer{
+    display: none;
+  }
+  .banner-logo{
+    display: none;
+  }
+  .nav-bar{
+    margin-right: 16px;
+    
+  }
+  .door-dash-logo{
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    justify-content: center; 
+     flex: 1;
+  }
+  .logo-part1{
+    margin-right: 8px;
+  }
+  .logo-part1,
+  .logo-part-2{
+    margin-top: 1px;
+    margin-bottom: 3px;
+  }
+ .open-app-btn,.login-btn{
+    display: none;
+  }
+  .signup-btn,
+  .signin-btn{
+    display: block;
+    border-radius: 25px;
+    padding: 0 12px;
+    padding-top: 9px;
+    padding-bottom:10px ;
+    border: none;
+    font-size: 18px;
+    font-family: font3;
+  }
+  .signup-btn{
+    background: #fff;
+    color: #606060;
+  }
+  .banner-flex{
+    margin-top: 22.2vh;
+    width: 742px;
+    height: 350px;
+  }
+  .banner-head{
+    max-width: 750px;
+    font-size: 26.64px;
+    padding-bottom: 3px;
+  }
+  .banner-head h1{
+    margin-block-start:0.1em;
+    /* margin-block-end: 0.67em; */
+    margin-inline-start:0px;
+    margin-inline-end: 0px;
+  }
+  .banner-search-bar{
+    margin-right:1px ;
+    width: 408px;
+    height: 56px;
+    border-radius: 30px;
+  }
+  .search-icon{
+    display: none;
+  }
+  .locationIcon-banner-768{
+    display: block;
+    margin-left: 20px;
+    margin-top: 4px;
+  }
+  .search-text{
+    margin-left: 0.5px;
+  }
+  .search-arrow{
+    padding-left: 151px;
+  }
+  .search-arrow-red{
+    display: none;
+  }
+  .banner-login{
+    display: none;
+  }
+  .banner-login-btn{
+    width: 88.73px;
+  }
+  .user-icon{
+    margin-bottom: 1px;
+  }
+  .banner-signin{
+    font-size: 13.8px;
+    display: block;
+    margin-right: 0.5px;
+  }
+  .home{
+    background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png);
+    height: 650px;
+    padding: 0px 8px;
+    
+  }
+
+}
+@media (min-width:960px){
+  /* HEAD PORTION */
+  .nav-bar{
+    margin-right: 24px;
+  }
+  .door-dash-logo{
+    align-items: top;
+  }
+  .logo-part1{
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 3px;
+  }
+  .logo-part1 svg{
+    margin-left: 16px;
+    width: 41.8px;
+    height: 30px;
+  }
+  .search-arrow-red{
+    display: none;
+  }
+  .logo-part-2 svg{
+    margin-left: 5px;
+    margin-top: 5.4px;
+    margin-right: 68px;
+    width: 155px;
+    height: 27px;
+    margin-bottom: 0;
+  }
+  .banner-logo{
+    display: none;
+  }
+}
+@media(min-width:1020px){
+  .flex-spacer{
+    display: none;
+  }
+  .nav-bar{
+    margin-right: 16px;
+  }
+  .banner-flex{
+    margin-top: 22.4vh;
+  }
+  .banner-head{
+    font-size: 26.64px;
+  }
+  .search-arrow{
+    display: none;
+  }
+  .search-arrow-red{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: rgba(235,23,0,255);
+    border-radius: 50px;
+    padding-top: 8px;
+    padding-left: 8px;
+    margin-left: 143px;
+  }
+  .banner-search-bar{
+    margin-right: 1.8px;
+    width: 408px;
+  }
+  .banner-signin-1024{
+    display: block;
+    padding-right: 10px;
+  }
+  .banner-signin{
+    display: none;
+  }
+  .banner-login-btn{
+    width: 203px;
+    margin-right: 2px;
+  }
+  .mid-section-below-1024{
+    display: none;
+  }
+  .dasher-link,
+.partner-link,
+.experience-link{
+  display: flex;
+  margin-top: 14px;
+}
+.dasher-link p,
+.partner-link p,
+.experience-link p{
+  color: #EB1700;
+  font-size: 14px;
+  font-family: font3;
+}
+.dasher-arrow-red,
+.partner-arrow-red,
+.experience-arrow-red{
+  margin-left: 4px;
+}
+.become-a-dasher,
+.become-a-partner,
+.DoorDash-experience{
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 420px;
+  padding: 16px;
+  margin: 0px auto;
+}
+.dasher-image img,
+.partner-image img,
+.experience-image img{
+  margin-right: 32px;
+  width: 154px;
+  margin-bottom: 10px;
+}
+.dasher-header,
+.partner-header,
+.experience-header{
+  color: #191919;
+  font-size: 21.334px;
+  font-family: font3;
+  width: 250px;
+  height: 80px;
+  line-height: 40px;
+}
+.dasher-paragrapgh,
+.partner-paragrapgh,
+.experience-paragrapgh{
+  width: 250px;
+  height: 72px;
+  font-size: 18px;
+  font-family: font2;
+  line-height: 24px;
+}
+.experience-paragrapgh{
+  margin-top: 40px;
+}
+.mid-section-1024{
+  display: flex;
+  margin: 0px auto;
+  margin: 96px auto;
+  width: 1104px;
+  height: 444px;
+  padding: 12px;
+}
+.spacer-midsection-top{
+  height: 0px;
+}
+
+}
