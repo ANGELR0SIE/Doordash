@@ -244,27 +244,7 @@ width: 350px;
 /* margin-left: 15.6vw; */
 /* margin-left: var(--uasage-space-xx-small); */
 }
-@media (max-width:400px){
-.ad-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  max-width: 300px;
-  min-width: 0px;
-  height: 148px;
-  background: #F7F7F7;
-  border: 1px solid #E7E7E7;
-  border-radius: 17px;
-  margin: 0 auto;
-}
-.doorstep{
-  min-height: 402px;
-}
-.become-a-dasher{
-  width: 300px;
-  overflow-y: hidden;
-}
-}
+
 /*add portion*/
 .ad-spacer-top{
 height: 20px;
@@ -377,9 +357,9 @@ margin-left: 4px;
 .become-a-partner,
 .DoorDash-experience{
 display: flex;
-width: 402px;
+/* width: 402px; */
 /* height: 216px; */
-
+overflow: hidden ;
 padding: 16px;
 margin: 0px auto;
 }
@@ -403,8 +383,8 @@ line-height: 40px;
 .dasher-paragrapgh p,
 .partner-paragrapgh p,
 .experience-paragrapgh p{
-width: 250px;
-height: 72px;
+max-width: 250px;
+min-height: 72px;
 font-size: 18px;
 font-family: font2;
 line-height: 24px;
@@ -2327,3 +2307,35 @@ align-self:baseline;
   justify-content: center;
  }
 }
+@media (max-width:400px){
+  .ad-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 300px;
+    min-width: 0px;
+    border: 1px solid #E7E7E7;
+    border-radius: 17px;
+    /* margin: 0 auto; */
+    justify-content: center;
+  }
+  .doorstep{
+    min-height: 402px;
+  }
+  .become-a-dasher,
+  .become-a-partner,
+  .DoorDash-experience{
+      padding: 0px;
+      
+  }
+  .dasher-image img, .partner-image img, .experience-image img {
+    margin-right: 25px;
+  }
+  .dasher-paragrapgh p,
+  .partner-paragrapgh p,
+  .experience-paragrapgh p{
+    width: 208px;
+    height: fit-content;
+    text-overflow: wrap;
+  }
+  }
